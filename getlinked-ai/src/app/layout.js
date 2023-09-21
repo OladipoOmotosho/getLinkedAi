@@ -1,15 +1,20 @@
-import Footer from "./components/footer/Footer";
-import NavBar from "./components/navBar/NavBar";
+import Footer from "./component/footer/Footer";
+import NavBar from "./component/navBar/NavBar";
 import "./globals.css";
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <nav>
-        <NavBar />
-      </nav>
-      <body>{children}</body>
-      <Footer />
+      <head>
+        <title>GetLinked</title>
+      </head>
+      <body>
+        <nav>
+          <NavBar />
+        </nav>
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

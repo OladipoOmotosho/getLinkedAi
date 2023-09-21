@@ -1,5 +1,5 @@
-import { CustomText } from '../components/CustomText';
 import { colors, FONTFAMILY } from '../styles';
+import CustomText from './CustomText';
 
 const CustomButton = ({
   text,
@@ -14,14 +14,15 @@ const CustomButton = ({
   onClick,
   loading,
   color,
-  background = colors.orange,
+  background,
   border = 'none',
-  borderRadius = 20,
-  borderTopLeftRadius = 20,
-  borderTopRightRadius = 20,
-  borderEndEndRadius = 20,
-  borderEndStartRadius = 20,
+  borderRadius,
+  borderTopLeftRadius,
+  borderTopRightRadius,
+  borderEndEndRadius,
+  borderEndStartRadius,
   fontSize,
+  className,
 }) => {
 
   return (
@@ -46,7 +47,7 @@ const CustomButton = ({
         borderEndStartRadius: borderEndStartRadius,
         fontSize: fontSize,
       }}
-      className={`py-[17px] text-white flex flex-row justify-center items-center`}
+      className={`${className} py-[17px] text-white flex flex-row justify-center items-center`}
       onClick={loading || disabled ? () => null : onClick}
     >
       <CustomText text={text} className="text-center" weight={textWeight} />
