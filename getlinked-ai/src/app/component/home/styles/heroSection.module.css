@@ -1,0 +1,37 @@
+.catchPhrase {
+  color: #fff;
+  font-family: var(--font-family2);
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.underline {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.blur{
+  background-image: url("../../../../assets/images/lensFlare1.svg");
+  background-repeat: no-repeat;
+
+}
+
+.subTexts {
+  color: #fff;
+  font-size: 80px;
+}
+.participate {
+  max-width: 530px;
+  color: #fff;
+  font-family: var(--font-family2);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 166%; /* 33.2px */
+}
+.imageFit {
+/* z-index: 1; */
+/* margin-top: -580px; */
+}

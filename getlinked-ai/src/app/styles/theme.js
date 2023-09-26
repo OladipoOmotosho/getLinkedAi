@@ -1,7 +1,7 @@
 export const FONTFAMILY = {
-    bold: 'SegoeUIBold',
-    normal: 'SegoeUI_Normal',
-    italic: 'SegoeUI_Normal',
-    light: 'Segoe UI Light',
+    bold: 'ClashDisplayBold',
+    normal: 'ClashDisplayNormal',
+    italic: 'ClashDisplayItalic',
+    light: 'ClashDisplayLight',
   };
   
